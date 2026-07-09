@@ -1,0 +1,127 @@
+{
+  "users": [
+    { "username": "asha", "password": "demo", "emp_id": "E101" },
+    { "username": "priya", "password": "demo", "emp_id": "E102" },
+    { "username": "rahul", "password": "demo", "emp_id": "M200" },
+    { "username": "neha", "password": "demo", "emp_id": "H900" }
+  ],
+  "employees": {
+    "E101": {
+      "emp_id": "E101",
+      "name": "Asha Menon",
+      "role": "employee",
+      "title": "Software Engineer II",
+      "department": "Engineering",
+      "manager_id": "M200",
+      "location": "Bengaluru",
+      "date_of_joining": "2023-04-10",
+      "email": "asha.menon@example.com",
+      "leave_balance": { "casual": 6, "sick": 8, "earned": 12 },
+      "salary_band": "IC2",
+      "annual_ctc": 1850000,
+      "payslips": {
+        "2026-06": { "gross": 154000, "deductions": 31000, "net": 123000, "currency": "INR" },
+        "2026-05": { "gross": 154000, "deductions": 30500, "net": 123500, "currency": "INR" }
+      },
+      "onboarding_tasks": [
+        { "task": "Sign employment contract", "status": "done" },
+        { "task": "Complete IT security training", "status": "done" },
+        { "task": "Set up payroll bank details", "status": "done" }
+      ],
+      "performance_review": {
+        "cycle": "H1-2026",
+        "status": "published",
+        "rating": "Exceeds Expectations",
+        "reviewer": "Rahul Verma",
+        "next_review_date": "2026-08-15"
+      }
+    },
+    "E102": {
+      "emp_id": "E102",
+      "name": "Priya Nair",
+      "role": "employee",
+      "title": "Software Engineer I",
+      "department": "Engineering",
+      "manager_id": "M200",
+      "location": "Pune",
+      "date_of_joining": "2026-06-15",
+      "email": "priya.nair@example.com",
+      "leave_balance": { "casual": 4, "sick": 6, "earned": 2 },
+      "salary_band": "IC1",
+      "annual_ctc": 1200000,
+      "payslips": {
+        "2026-06": { "gross": 100000, "deductions": 18000, "net": 82000, "currency": "INR" }
+      },
+      "onboarding_tasks": [
+        { "task": "Sign employment contract", "status": "done" },
+        { "task": "Complete IT security training", "status": "pending" },
+        { "task": "Set up payroll bank details", "status": "pending" },
+        { "task": "Meet assigned buddy", "status": "pending" }
+      ],
+      "performance_review": {
+        "cycle": "H1-2026",
+        "status": "not_started",
+        "rating": null,
+        "reviewer": "Rahul Verma",
+        "next_review_date": "2026-12-15"
+      }
+    },
+    "M200": {
+      "emp_id": "M200",
+      "name": "Rahul Verma",
+      "role": "manager",
+      "title": "Engineering Manager",
+      "department": "Engineering",
+      "manager_id": "H900",
+      "location": "Bengaluru",
+      "date_of_joining": "2019-01-07",
+      "email": "rahul.verma@example.com",
+      "reports": ["E101", "E102"],
+      "leave_balance": { "casual": 5, "sick": 7, "earned": 18 },
+      "salary_band": "M2",
+      "annual_ctc": 3600000,
+      "payslips": {
+        "2026-06": { "gross": 300000, "deductions": 72000, "net": 228000, "currency": "INR" }
+      },
+      "onboarding_tasks": [],
+      "performance_review": {
+        "cycle": "H1-2026",
+        "status": "published",
+        "rating": "Meets Expectations",
+        "reviewer": "Neha Kapoor",
+        "next_review_date": "2026-08-01"
+      }
+    },
+    "H900": {
+      "emp_id": "H900",
+      "name": "Neha Kapoor",
+      "role": "hr_admin",
+      "title": "HR Business Partner",
+      "department": "Human Resources",
+      "manager_id": null,
+      "location": "Mumbai",
+      "date_of_joining": "2017-09-23",
+      "email": "neha.kapoor@example.com",
+      "leave_balance": { "casual": 7, "sick": 8, "earned": 20 },
+      "salary_band": "HR3",
+      "annual_ctc": 4200000,
+      "payslips": {
+        "2026-06": { "gross": 350000, "deductions": 84000, "net": 266000, "currency": "INR" }
+      },
+      "onboarding_tasks": [],
+      "performance_review": {
+        "cycle": "H1-2026",
+        "status": "published",
+        "rating": "Exceeds Expectations",
+        "reviewer": "CHRO",
+        "next_review_date": "2026-08-01"
+      }
+    }
+  },
+  "salary_bands": {
+    "IC1": { "min": 1000000, "max": 1400000 },
+    "IC2": { "min": 1500000, "max": 2200000 },
+    "M2": { "min": 3000000, "max": 4000000 },
+    "HR3": { "min": 3800000, "max": 4800000 }
+  }
+}
