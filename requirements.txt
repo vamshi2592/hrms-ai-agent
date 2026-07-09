@@ -1,0 +1,31 @@
+# LLM + agent framework
+langchain
+langchain-groq
+
+# Web layer
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Auth: JWT + OAuth2 password flow
+python-jose[cryptography]
+passlib[bcrypt]
+
+# Vector store (pgvector) + embeddings (ONNX runtime, no torch)
+langchain-postgres
+pgvector
+psycopg[binary]
+fastembed
+
+# Audit store
+SQLAlchemy
+
+# Notifications (default to console; real backends optional)
+sendgrid
+slack_sdk
+
+# Config
+pydantic-settings
+python-dotenv
+truststore
+
